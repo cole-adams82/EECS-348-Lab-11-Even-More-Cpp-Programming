@@ -166,7 +166,7 @@ public:
 
     // Returns a new Matrix with the element at (row, col) set to 'value'.
     // Assumes value to be an integer and (row, col) to be a valid index.
-    Matrix set(int row, int col, int value) const {
+    Matrix set(int row = 0, int col = 0, int value = 100) const {
         Matrix result(*this);
         result(row, col) = value;
         return result;
